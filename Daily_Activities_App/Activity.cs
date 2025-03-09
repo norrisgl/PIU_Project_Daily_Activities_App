@@ -2,45 +2,45 @@
 
 
 //Lista cu nivelele de prioritate posibile ale unei activitati
-public enum priority_level
+public enum PriorityLevel
 {
     Low, Medium, High
 }
 
-namespace Daily_Activities_App
+namespace DailyActivitiesApp
 {
     public class Activity
     {
         //Stocheaza numele activitatii
-        public string Activity_name { get; set; }
+        public string ActivityName { get; set; }
         //Stocheaza informatii suplimentare referitoare la activitate
         public string Description { get; set; }
         //Stocheaza data si ora la care are loc activitatea 
-        public DateTime Date_time { get; set; }
+        public DateTime DateAndTime { get; set; }
         //Stocheaza nivelul de prioritate al activitatii
-        public priority_level Priority { get; set; }
+        public PriorityLevel Priority { get; set; }
         //Verifica daca aplicatia este finalizata
-        public bool Is_finished { get; set; }
+        public bool IsFinished { get; set; }
 
         //Constructor
-        public Activity(string _activity_name, string _Description, DateTime _Date_time, priority_level _Priority)
+        public Activity(string _ActivityName, string _Description, DateTime _DateAndTime, PriorityLevel _Priority)
         {
-            Activity_name = _activity_name;
+            ActivityName = _ActivityName;
             Description = _Description;
-            Date_time = _Date_time;
+            DateAndTime = _DateAndTime;
             Priority = _Priority;
-            Is_finished = false; 
+            IsFinished = false; 
         }
 
         //Metoda pentru marcarea unei activitati ca finalizata
         public void MarkAsFinished()
         {
-            Is_finished = true; 
+            IsFinished = true; 
         }
 
         public string Info()
         {
-            return  $"Activity: {Activity_name}, \nDescription: {Description}, \nTime: {Date_time}, \nPriority: {Priority}, \nFinished: {Is_finished}"; 
+            return  $"Activity: {ActivityName}, \nDescription: {Description}, \nTime: {DateAndTime}, \nPriority: {Priority}, \nFinished: {IsFinished}"; 
         }
 
     }
