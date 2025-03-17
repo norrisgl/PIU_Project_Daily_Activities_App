@@ -30,7 +30,7 @@ namespace DailyActivitiesApp
                         {
                             Console.WriteLine($"Introduceti activitatea {i + 1}:");
                             Activity activitate = ReadActivityFromKeyboard();
-                            persoana.AddActivity(activitate);
+                            persoana.ActivityHandler.AddActivity(activitate);
                         }
 
                         persoane.Add(persoana);
