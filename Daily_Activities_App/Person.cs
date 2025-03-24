@@ -5,6 +5,11 @@ using System.Linq;
 
 public class Person
 {
+    private const char MAIN_FILE_SEPARATOR = ';';
+    private const char SECONDARY_FILE_SEPARATOR = ' ';
+
+    //ID unic al persoanei
+    public int PersonID { get; set; }
     //Numele persoanei
     public string Name { get; set; }        
     //Varsta persoanei
@@ -14,16 +19,48 @@ public class Person
     //Lista de activitati a persoanei
     public ActivityHandler ActivityHandler { get; set; }
 
-    // Constructor
-    public Person(string nume, int varsta, string email)
+    //Constructor Implicit
+    public Person()
     {
+        Name = Email = string.Empty; 
+    }
+
+    // Constructor
+    public Person(int PersID, string nume, int varsta, string email)
+    {
+        PersonID = PersID; 
         Name = nume;
         Age = varsta;
         Email = email;
-        ActivityHandler = new ActivityHandler(); // Inițializare listă goală de activități
+        ActivityHandler = new ActivityHandler(); // Inițializare listă goală de activitati
     }
+
+    // Constructor pentru citire din fisier
+    public Person(string linieFisier)
+    {
+        string[] dateFisier = linieFisier.Split(MAIN_FILE_SEPARATOR);
+
+        PersonID = Convert.ToInt32(dateFisier[0]);
+        Name = dateFisier[1];
+        Age = Convert.ToInt32(dateFisier[2]);
+        Email = dateFisier[3];
+        ActivityHandler = new ActivityHandler();
+    }
+
     public string Info()
     {
-        return $"Nume: {Name} \nVarsta: {Age} \nEmail: {Email}"; 
+        return $"ID: {PersonID} \nNume: {Name} \nVarsta: {Age} \nEmail: {Email}"; 
+    }
+
+    public string FileConverter()
+    {
+        string fileObject = string.Format("{1}{0}{2}{0}{3}{0}{4}",
+            MAIN_FILE_SEPARATOR,
+            PersonID.ToString(),
+            Name ?? "NECUNOSCUT",
+            Age.ToString() ?? "NECUNOSCUT",
+            Email?? "NECUNOSCUT");
+
+        return fileObject; 
     }
 }
