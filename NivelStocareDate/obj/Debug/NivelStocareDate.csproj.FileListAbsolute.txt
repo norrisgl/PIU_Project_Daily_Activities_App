@@ -1,0 +1,9 @@
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\bin\Debug\NivelStocareDate.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\bin\Debug\NivelStocareDate.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\bin\Debug\LibrarieModele.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\bin\Debug\LibrarieModele.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\obj\Debug\NivelStocareDate.csproj.AssemblyReference.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\obj\Debug\NivelStocareDate.csproj.CoreCompileInputs.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\obj\Debug\NivelSto.ECC26E05.Up2Date
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\obj\Debug\NivelStocareDate.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\NivelStocareDate\obj\Debug\NivelStocareDate.pdb

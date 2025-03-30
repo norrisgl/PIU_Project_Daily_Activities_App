@@ -1,0 +1,15 @@
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\InterfataUtilizator_WindowsForms.exe.config
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\InterfataUtilizator_WindowsForms.exe
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\InterfataUtilizator_WindowsForms.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\LibrarieModele.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\NivelStocareDate.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\LibrarieModele.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\bin\Debug\NivelStocareDate.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.csproj.AssemblyReference.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.Properties.Resources.resources
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.csproj.GenerateResource.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\Interfat.43DF67F2.Up2Date
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.exe
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.ActivityTracker.resources

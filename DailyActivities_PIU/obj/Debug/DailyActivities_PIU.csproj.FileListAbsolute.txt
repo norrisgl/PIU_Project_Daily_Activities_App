@@ -1,0 +1,12 @@
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\DailyActivities_PIU.exe.config
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\DailyActivities_PIU.exe
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\DailyActivities_PIU.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\LibrarieModele.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\NivelStocareDate.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\LibrarieModele.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\bin\Debug\NivelStocareDate.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\obj\Debug\DailyActivities_PIU.csproj.AssemblyReference.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\obj\Debug\DailyActivities_PIU.csproj.CoreCompileInputs.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\obj\Debug\DailyAct.D941FF8F.Up2Date
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\obj\Debug\DailyActivities_PIU.exe
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\DailyActivities_PIU\obj\Debug\DailyActivities_PIU.pdb

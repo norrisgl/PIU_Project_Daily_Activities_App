@@ -1,0 +1,6 @@
+1;Ion Popescu;22;ionpopescu@gmail.com
+PIU;Laborator;3/31/2025 12:00:00 PM;Medium;2;False
+---
+2;Alex Lucaci;27;lucacialex@yahoo.com
+MEST;Laborator;4/2/2025 8:00:00 AM;Medium;2;False
+---

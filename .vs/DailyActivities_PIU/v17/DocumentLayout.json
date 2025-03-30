@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\activitytracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\dailyactivities_piu\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|solutionrelative:dailyactivities_piu\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A98751B-86A5-4972-9C5F-51D7FD895D3F}|NivelStocareDate\\NivelStocareDate.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\nivelstocaredate\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A98751B-86A5-4972-9C5F-51D7FD895D3F}|NivelStocareDate\\NivelStocareDate.csproj|solutionrelative:nivelstocaredate\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\dailyactivities_piu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|solutionrelative:dailyactivities_piu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\personhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\personhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivityTracker.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T18:50:47.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\NivelStocareDate\\FileHandler.cs",
+              "RelativeDocumentMoniker": "NivelStocareDate\\FileHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\NivelStocareDate\\FileHandler.cs",
+              "RelativeToolTip": "NivelStocareDate\\FileHandler.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:07:28.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\App.config",
+              "RelativeDocumentMoniker": "DailyActivities_PIU\\App.config",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\App.config",
+              "RelativeToolTip": "DailyActivities_PIU\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-29T12:07:17.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\Program.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\Program.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\Program.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:55:36.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivityTracker.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs [Design]",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:54:20.515Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivityTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA3wHwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:42:45.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\Program.cs",
+              "RelativeDocumentMoniker": "DailyActivities_PIU\\Program.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\Program.cs",
+              "RelativeToolTip": "DailyActivities_PIU\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:09:43.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Person.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\Person.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Person.cs",
+              "RelativeToolTip": "LibrarieModele\\Person.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwBYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:12:26.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Activity.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\Activity.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Activity.cs",
+              "RelativeToolTip": "LibrarieModele\\Activity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAEwFUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:13:01.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActivityHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\ActivityHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeToolTip": "LibrarieModele\\ActivityHandler.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwGMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T10:55:10.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\PersonHandler.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\PersonHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\PersonHandler.cs",
+              "RelativeToolTip": "LibrarieModele\\PersonHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T10:56:53.129Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

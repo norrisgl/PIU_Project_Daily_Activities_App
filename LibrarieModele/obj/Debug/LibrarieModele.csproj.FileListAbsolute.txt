@@ -1,0 +1,6 @@
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\bin\Debug\LibrarieModele.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\bin\Debug\LibrarieModele.pdb
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\obj\Debug\LibrarieModele.csproj.AssemblyReference.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\obj\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\obj\Debug\LibrarieModele.dll
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\LibrarieModele\obj\Debug\LibrarieModele.pdb
