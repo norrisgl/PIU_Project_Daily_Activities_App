@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\activitytracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\dailyactivities_piu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9053D5-F522-4418-AF02-CA6732FCC633}|DailyActivities_PIU\\DailyActivities_PIU.csproj|solutionrelative:dailyactivities_piu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivityHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\ActivityHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeToolTip": "LibrarieModele\\ActivityHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:12:09.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\Program.cs",
+              "RelativeDocumentMoniker": "DailyActivities_PIU\\Program.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\DailyActivities_PIU\\Program.cs",
+              "RelativeToolTip": "DailyActivities_PIU\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwBYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:11:59.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivityTracker.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAASwCcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:41:04.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActivityTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs*",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs*",
+              "ViewState": "AgIAACYAAAAAAAAAAADgv14AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:42:45.19Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

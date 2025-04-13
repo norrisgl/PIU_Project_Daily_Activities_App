@@ -82,5 +82,34 @@ namespace NivelStocareDate
 
             return persoane;
         }
+
+        public static void AppendToFile(Person persoana)
+        {
+            string filePath = ConfigurationManager.AppSettings["FilePath"];
+
+            // Check if the file exists, if not create it
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Close(); // Create the file and immediately close it
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePath, true)) // true for append mode
+            {
+                // Write person information
+                writer.WriteLine(persoana.FileConverter());
+
+                // Write each activity of the person
+                if (persoana.ActivityHandler != null && persoana.ActivityHandler.Activities != null)
+                {
+                    foreach (Activity activitate in persoana.ActivityHandler.Activities)
+                    {
+                        writer.WriteLine(activitate.FileConverter());
+                    }
+                }
+
+                // Add separator to indicate end of person data
+                writer.WriteLine("---");
+            }
+        }
     }
 }

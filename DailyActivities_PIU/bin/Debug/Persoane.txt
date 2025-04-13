@@ -4,3 +4,13 @@ PIU;Laborator;3/31/2025 12:00:00 PM;Medium;2;False
 2;Alex Lucaci;27;lucacialex@yahoo.com
 MEST;Laborator;4/2/2025 8:00:00 AM;Medium;2;False
 ---
+0;Noris Galan;21;noris@gmail.com
+---
+1;Claudiu;19;claudiu@outlook.com
+Stretching;Mobilitate;5/7/2025 12:00:00 PM;Low;20;False
+Fotbal;Sintetic;4/8/2025 8:00:00 PM;Medium;20;False
+---
+0;Ionela Popescu;22;ionelapopescu@gmail.com
+---
+0;Luca Alex;29;luca@yahoo.com
+---

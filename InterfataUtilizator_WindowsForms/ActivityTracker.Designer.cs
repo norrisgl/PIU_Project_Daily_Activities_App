@@ -36,8 +36,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 507);
             this.Name = "ActivityTracker";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.ActivityTracker_Load);
+            this.Text = "ActivityTracker";
+            //this.Load += new System.EventHandler(this.ActivityTracker);
             this.ResumeLayout(false);
 
         }
