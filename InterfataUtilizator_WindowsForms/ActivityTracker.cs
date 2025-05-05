@@ -7,7 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using LibrarieModele;
 using NivelStocareDate;
-using System.ComponentModel; 
+using System.ComponentModel;
+using InterfataUtilizator_WindowsForms.Forms; 
 
 namespace InterfataUtilizator_WindowsForms
 {
@@ -106,12 +107,11 @@ namespace InterfataUtilizator_WindowsForms
             };
             btnCautare.Click += BtnCautare_Click;
 
-            // Adaugă controalele la formular
-            this.Controls.AddRange(new Control[] { lblCautare, txtCautare, btnCautare });
 
             // Adaugă controalele la formular
             this.Controls.AddRange(new Control[] { lblNumeInput, txtNume, lblVarstaInput, txtVarsta,
-                                                 lblEmailInput, txtEmail, btnAdauga, btnRefresh, lblError });
+                                                 lblEmailInput, txtEmail, btnAdauga, btnRefresh, lblError,
+                                                 lblCautare, txtCautare, btnCautare});
         }
 
         private void BtnAdauga_Click(object sender, EventArgs e)
@@ -343,187 +343,11 @@ namespace InterfataUtilizator_WindowsForms
 
         private void AfiseazaDetaliiPersoana(Person persoana)
         {
-            var detaliiForm = new Form
+            using (var detaliiForm = new PersonDetailsForm(persoana))
             {
-                Text = $"Detalii: {persoana.Name}",
-                Size = new Size(700, 600),
-                StartPosition = FormStartPosition.CenterParent,
-                FormBorderStyle = FormBorderStyle.FixedDialog,
-                MaximizeBox = false,
-                MinimizeBox = false
-            };
-
-            // 1. Panou pentru afișarea detaliilor existente
-            var panelDetalii = new Panel
-            {
-                Dock = DockStyle.Top,
-                Height = 250,
-                BackColor = Color.White,
-                BorderStyle = BorderStyle.FixedSingle,
-                Padding = new Padding(15)
-            };
-
-            var tbDetalii = new TextBox
-            {
-                Multiline = true,
-                Dock = DockStyle.Fill,
-                ScrollBars = ScrollBars.Vertical,
-                ReadOnly = true,
-                Font = new Font("Consolas", 9),
-                Text = GenerareTextDetalii(persoana)
-            };
-            panelDetalii.Controls.Add(tbDetalii);
-
-            // 2. Separator vizual
-            var separator = new Panel
-            {
-                Dock = DockStyle.Top,
-                Height = 1,
-                BackColor = Color.Silver
-            };
-
-            // 3. Panou pentru butoane de acțiune
-            var panelActiuni = new Panel
-            {
-                Dock = DockStyle.Top,
-                Height = 50,
-                Padding = new Padding(10)
-            };
-
-            var btnAdaugaActivitate = new Button
-            {
-                Text = "Adaugă Activitate Nouă",
-                FlatStyle = FlatStyle.Flat,
-                BackColor = Color.LightGreen,
-                Width = 180,
-                //Image = Properties.Resources.AddIcon // Opțional - adaugă iconiță
-            };
-
-            var btnRefresh = new Button
-            {
-                Text = "Actualizează",
-                FlatStyle = FlatStyle.Flat,
-                Location = new Point(190, 0),
-                Width = 100
-            };
-
-            panelActiuni.Controls.AddRange(new Control[] { btnAdaugaActivitate, btnRefresh });
-
-            // 4. Panou pentru lista de activități (cu DataGridView)
-            var panelActivitati = new Panel
-            {
-                Dock = DockStyle.Fill,
-                Padding = new Padding(10)
-            };
-
-            var dgvActivitati = new DataGridView
-            {
-                Dock = DockStyle.Fill,
-                ReadOnly = true,
-                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
-                BackgroundColor = Color.White,
-                RowHeadersVisible = false,
-                AllowUserToAddRows = false,
-                AllowUserToDeleteRows = false
-            };
-
-            dgvActivitati.Columns.AddRange(
-                new DataGridViewTextBoxColumn { HeaderText = "Nume", DataPropertyName = "ActivityName", FillWeight = 30 },
-                new DataGridViewTextBoxColumn { HeaderText = "Data", DataPropertyName = "DateAndTime", FillWeight = 20 },
-                new DataGridViewTextBoxColumn { HeaderText = "Tip", DataPropertyName = "Type", FillWeight = 30 },
-                new DataGridViewTextBoxColumn { HeaderText = "Descriere", DataPropertyName = "Description", FillWeight = 20 }
-            );
-
-            dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
-            panelActivitati.Controls.Add(dgvActivitati);
-
-            // Evenimente
-            btnAdaugaActivitate.Click += (s, e) =>
-            {
-                using (var addForm = new AddActivityForm())
-                {
-                    if (addForm.ShowDialog() == DialogResult.OK && addForm.NewActivity != null)
-                    {
-                        persoana.ActivityHandler?.Activities?.Add(addForm.NewActivity);
-                        tbDetalii.Text = GenerareTextDetalii(persoana);
-                        dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
-                    }
-                }
-            };
-
-            btnRefresh.Click += (s, e) =>
-            {
-                tbDetalii.Text = GenerareTextDetalii(persoana);
-                dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
-            };
-
-            // Adăugare controale în ordine inversă a docking-ului
-            detaliiForm.Controls.Add(panelActivitati);
-            detaliiForm.Controls.Add(panelActiuni);
-            detaliiForm.Controls.Add(separator);
-            detaliiForm.Controls.Add(panelDetalii);
-
-            // Buton de închidere
-            var btnInchide = new Button
-            {
-                Text = "Închide",
-                Dock = DockStyle.Bottom,
-                Height = 40,
-                DialogResult = DialogResult.OK
-            };
-            detaliiForm.Controls.Add(btnInchide);
-
-            detaliiForm.ShowDialog();
-        }
-
-        private string GenerareTextDetalii(Person persoana)
-        {
-            var sb = new StringBuilder();
-            sb.AppendLine($"=== DETALII PERSOANĂ ===");
-            sb.AppendLine($"Nume: {persoana.Name}");
-            sb.AppendLine($"Email: {persoana.Email ?? "-"}");
-            sb.AppendLine($"Varsta: {persoana.Age}");
-            sb.AppendLine();
-
-            sb.AppendLine("=== ACTIVITĂȚI ===");
-            if (persoana.ActivityHandler?.Activities?.Count > 0)
-            {
-                foreach (var activitate in persoana.ActivityHandler.Activities.OrderBy(a => a.DateAndTime))
-                {
-                    sb.AppendLine($"• {activitate.ActivityName} ({activitate.DateAndTime:dd.MM.yyyy HH:mm})");
-                    sb.AppendLine($"  Tip: {FormatActivityTypes(activitate.ActType)}");
-                    if (!string.IsNullOrEmpty(activitate.Description))
-                    {
-                        sb.AppendLine($"  Descriere: {activitate.Description}");
-                    }
-                    sb.AppendLine();
-                }
+                detaliiForm.ShowDialog();
             }
-            else
-            {
-                sb.AppendLine("Nu există activități înregistrate.");
-            }
-
-            return sb.ToString();
         }
-
-        private string FormatActivityTypes(ActivityType types)
-        {
-            if (types == ActivityType.None)
-                return "Niciun tip specificat";
-
-            var selectedTypes = new List<string>();
-            foreach (ActivityType type in Enum.GetValues(typeof(ActivityType)))
-            {
-                if (type != ActivityType.None && types.HasFlag(type))
-                {
-                    selectedTypes.Add(type.ToString());
-                }
-            }
-
-            return selectedTypes.Any() ? string.Join(", ", selectedTypes) : "Niciun tip specificat";
-        }
-
 
 
         private void ActivityTracker_Load(object sender, EventArgs e)
