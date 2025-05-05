@@ -13,3 +13,4 @@ C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_W
 C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.exe
 C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.pdb
 C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.ActivityTracker.resources
+C:\Users\Noris\source\repos\ProiectPIU\DailyActivities_PIU\InterfataUtilizator_WindowsForms\obj\Debug\InterfataUtilizator_WindowsForms.AddActivityForm.resources

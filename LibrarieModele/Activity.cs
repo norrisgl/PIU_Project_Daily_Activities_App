@@ -43,6 +43,12 @@ namespace LibrarieModele
         //Verifica daca aplicatia este finalizata
         public bool IsFinished { get; set; }
 
+        //Constructor implicit
+        public Activity()
+        {
+            DateAndTime = DateTime.Now;
+        }
+
         //Constructor
         public Activity(string _ActivityName, string _Description, DateTime _DateAndTime, PriorityLevel _Priority, ActivityType actType)
         {

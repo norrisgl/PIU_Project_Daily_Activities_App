@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using LibrarieModele;
 using NivelStocareDate;
+using System.ComponentModel; 
 
 namespace InterfataUtilizator_WindowsForms
 {
@@ -182,12 +183,12 @@ namespace InterfataUtilizator_WindowsForms
 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
+            txtCautare.Text = string.Empty;
             if (ultimaPersoanaAdaugata != null)
             {
                 txtNume.Text = ultimaPersoanaAdaugata.Name;
                 txtVarsta.Text = ultimaPersoanaAdaugata.Age.ToString();
                 txtEmail.Text = ultimaPersoanaAdaugata.Email;
-                txtCautare.Text = string.Empty;
             }
             IncarcaSiAfiseazaPersoane();
         }
@@ -324,6 +325,10 @@ namespace InterfataUtilizator_WindowsForms
                             lblPersoane[i, j].Text = nrActivitati.ToString();
                             lblPersoane[i, j].ForeColor = nrActivitati == 0 ? Color.Red :
                                                          (nrActivitati > 3 ? Color.DarkGreen : Color.Black);
+                            lblPersoane[i, j].Tag = persoane[i]; // Adaugă persoana în Tag
+                            lblPersoane[i, j].Cursor = Cursors.Hand; // Setează cursorul să arate ca o mână
+                            lblPersoane[i, j].Click += (s, e) =>
+                                AfiseazaDetaliiPersoana((Person)((Label)s).Tag);
                             break;
                     }
 
@@ -341,8 +346,21 @@ namespace InterfataUtilizator_WindowsForms
             var detaliiForm = new Form
             {
                 Text = $"Detalii: {persoana.Name}",
-                Size = new Size(500, 400),
-                StartPosition = FormStartPosition.CenterParent
+                Size = new Size(700, 600),
+                StartPosition = FormStartPosition.CenterParent,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            // 1. Panou pentru afișarea detaliilor existente
+            var panelDetalii = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 250,
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                Padding = new Padding(15)
             };
 
             var tbDetalii = new TextBox
@@ -351,39 +369,166 @@ namespace InterfataUtilizator_WindowsForms
                 Dock = DockStyle.Fill,
                 ScrollBars = ScrollBars.Vertical,
                 ReadOnly = true,
-                Font = new Font("Arial", 10),
+                Font = new Font("Consolas", 9),
                 Text = GenerareTextDetalii(persoana)
             };
+            panelDetalii.Controls.Add(tbDetalii);
 
-            detaliiForm.Controls.Add(tbDetalii);
+            // 2. Separator vizual
+            var separator = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 1,
+                BackColor = Color.Silver
+            };
+
+            // 3. Panou pentru butoane de acțiune
+            var panelActiuni = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 50,
+                Padding = new Padding(10)
+            };
+
+            var btnAdaugaActivitate = new Button
+            {
+                Text = "Adaugă Activitate Nouă",
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.LightGreen,
+                Width = 180,
+                //Image = Properties.Resources.AddIcon // Opțional - adaugă iconiță
+            };
+
+            var btnRefresh = new Button
+            {
+                Text = "Actualizează",
+                FlatStyle = FlatStyle.Flat,
+                Location = new Point(190, 0),
+                Width = 100
+            };
+
+            panelActiuni.Controls.AddRange(new Control[] { btnAdaugaActivitate, btnRefresh });
+
+            // 4. Panou pentru lista de activități (cu DataGridView)
+            var panelActivitati = new Panel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(10)
+            };
+
+            var dgvActivitati = new DataGridView
+            {
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                BackgroundColor = Color.White,
+                RowHeadersVisible = false,
+                AllowUserToAddRows = false,
+                AllowUserToDeleteRows = false
+            };
+
+            dgvActivitati.Columns.AddRange(
+                new DataGridViewTextBoxColumn { HeaderText = "Nume", DataPropertyName = "ActivityName", FillWeight = 30 },
+                new DataGridViewTextBoxColumn { HeaderText = "Data", DataPropertyName = "DateAndTime", FillWeight = 20 },
+                new DataGridViewTextBoxColumn { HeaderText = "Tip", DataPropertyName = "Type", FillWeight = 30 },
+                new DataGridViewTextBoxColumn { HeaderText = "Descriere", DataPropertyName = "Description", FillWeight = 20 }
+            );
+
+            dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
+            panelActivitati.Controls.Add(dgvActivitati);
+
+            // Evenimente
+            btnAdaugaActivitate.Click += (s, e) =>
+            {
+                using (var addForm = new AddActivityForm())
+                {
+                    if (addForm.ShowDialog() == DialogResult.OK && addForm.NewActivity != null)
+                    {
+                        persoana.ActivityHandler?.Activities?.Add(addForm.NewActivity);
+                        tbDetalii.Text = GenerareTextDetalii(persoana);
+                        dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
+                    }
+                }
+            };
+
+            btnRefresh.Click += (s, e) =>
+            {
+                tbDetalii.Text = GenerareTextDetalii(persoana);
+                dgvActivitati.DataSource = persoana.ActivityHandler?.Activities?.ToList();
+            };
+
+            // Adăugare controale în ordine inversă a docking-ului
+            detaliiForm.Controls.Add(panelActivitati);
+            detaliiForm.Controls.Add(panelActiuni);
+            detaliiForm.Controls.Add(separator);
+            detaliiForm.Controls.Add(panelDetalii);
+
+            // Buton de închidere
+            var btnInchide = new Button
+            {
+                Text = "Închide",
+                Dock = DockStyle.Bottom,
+                Height = 40,
+                DialogResult = DialogResult.OK
+            };
+            detaliiForm.Controls.Add(btnInchide);
+
             detaliiForm.ShowDialog();
         }
 
         private string GenerareTextDetalii(Person persoana)
         {
             var sb = new StringBuilder();
+            sb.AppendLine($"=== DETALII PERSOANĂ ===");
             sb.AppendLine($"Nume: {persoana.Name}");
-            sb.AppendLine($"Vârstă: {persoana.Age}");
-            sb.AppendLine($"Email: {persoana.Email}");
-            sb.AppendLine("\nActivități:");
+            sb.AppendLine($"Email: {persoana.Email ?? "-"}");
+            sb.AppendLine($"Varsta: {persoana.Age}");
+            sb.AppendLine();
 
-            if (persoana.ActivityHandler?.Activities != null && persoana.ActivityHandler.Activities.Count > 0)
+            sb.AppendLine("=== ACTIVITĂȚI ===");
+            if (persoana.ActivityHandler?.Activities?.Count > 0)
             {
-                foreach (var activitate in persoana.ActivityHandler.Activities)
+                foreach (var activitate in persoana.ActivityHandler.Activities.OrderBy(a => a.DateAndTime))
                 {
-                    sb.AppendLine($"\n• {activitate.ActivityName}");
-                    sb.AppendLine($"  Data: {activitate.DateAndTime}");
-                    sb.AppendLine($"  Prioritate: {activitate.Priority}");
-                    sb.AppendLine($"  Tip: {activitate.ActType}");
-                    sb.AppendLine($"  Descriere: {activitate.Description}");
+                    sb.AppendLine($"• {activitate.ActivityName} ({activitate.DateAndTime:dd.MM.yyyy HH:mm})");
+                    sb.AppendLine($"  Tip: {FormatActivityTypes(activitate.ActType)}");
+                    if (!string.IsNullOrEmpty(activitate.Description))
+                    {
+                        sb.AppendLine($"  Descriere: {activitate.Description}");
+                    }
+                    sb.AppendLine();
                 }
             }
             else
             {
-                sb.AppendLine("Nu există activități înregistrate");
+                sb.AppendLine("Nu există activități înregistrate.");
             }
 
             return sb.ToString();
+        }
+
+        private string FormatActivityTypes(ActivityType types)
+        {
+            if (types == ActivityType.None)
+                return "Niciun tip specificat";
+
+            var selectedTypes = new List<string>();
+            foreach (ActivityType type in Enum.GetValues(typeof(ActivityType)))
+            {
+                if (type != ActivityType.None && types.HasFlag(type))
+                {
+                    selectedTypes.Add(type.ToString());
+                }
+            }
+
+            return selectedTypes.Any() ? string.Join(", ", selectedTypes) : "Niciun tip specificat";
+        }
+
+
+
+        private void ActivityTracker_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

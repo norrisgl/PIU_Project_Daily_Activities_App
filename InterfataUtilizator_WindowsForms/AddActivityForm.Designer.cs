@@ -1,6 +1,6 @@
 ﻿namespace InterfataUtilizator_WindowsForms
 {
-    partial class ActivityTracker
+    partial class AddActivityForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // ActivityTracker
+            // AddActivityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 507);
-            this.Name = "ActivityTracker";
-            this.Text = "ActivityTracker";
-            this.Load += new System.EventHandler(this.ActivityTracker_Load);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "AddActivityForm";
+            this.Text = "AddActivity";
+            this.Load += new System.EventHandler(this.AddActivityForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -45,4 +45,3 @@
         #endregion
     }
 }
-
