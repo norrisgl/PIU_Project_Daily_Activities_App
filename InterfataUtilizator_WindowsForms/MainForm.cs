@@ -12,7 +12,7 @@ using InterfataUtilizator_WindowsForms.Forms;
 
 namespace InterfataUtilizator_WindowsForms
 {
-    public partial class ActivityTracker : Form
+    public partial class MainForm : Form
     {
         private const int MARGINE_STANGA = 50;
         private const int LATIME_CONTROL = 150;
@@ -29,7 +29,7 @@ namespace InterfataUtilizator_WindowsForms
         private Label lblError;
         private Person ultimaPersoanaAdaugata;
 
-        public ActivityTracker()
+        public MainForm()
         {
             
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace InterfataUtilizator_WindowsForms
         private void ConfigureazaFormular()
         {
             this.Text = "Activity Tracker";
-            this.Size = new Size(800, 500);
+            this.Size = new Size(900, 900);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Font = new Font("Arial", 9, FontStyle.Regular);
             this.ForeColor = Color.DarkSlateBlue;
@@ -108,10 +108,16 @@ namespace InterfataUtilizator_WindowsForms
             btnCautare.Click += BtnCautare_Click;
 
 
+            var lblNume = new Label { Text = "NUME", Font = new Font(Label.DefaultFont, FontStyle.Bold), Location = new Point(MARGINE_STANGA, 160) };
+            var lblVarsta = new Label { Text = "VÂRSTĂ", Font = new Font(Label.DefaultFont, FontStyle.Bold), Location = new Point(MARGINE_STANGA + DIMENSIUNE_PAS_X, 160) };
+            var lblEmail = new Label { Text = "EMAIL", Font = new Font(Label.DefaultFont, FontStyle.Bold), Location = new Point(MARGINE_STANGA + 2*DIMENSIUNE_PAS_X, 160) };
+            var lblActivitati = new Label { Text = "ACTIVITĂȚI", Font = new Font(Label.DefaultFont, FontStyle.Bold), Location = new Point(MARGINE_STANGA + 3*DIMENSIUNE_PAS_X, 160) };
+
             // Adaugă controalele la formular
             this.Controls.AddRange(new Control[] { lblNumeInput, txtNume, lblVarstaInput, txtVarsta,
                                                  lblEmailInput, txtEmail, btnAdauga, btnRefresh, lblError,
-                                                 lblCautare, txtCautare, btnCautare});
+                                                 lblCautare, txtCautare, btnCautare,
+                                                 lblNume, lblVarsta, lblEmail, lblActivitati});
         }
 
         private void BtnAdauga_Click(object sender, EventArgs e)
@@ -128,7 +134,7 @@ namespace InterfataUtilizator_WindowsForms
                 // Adaugă persoana în fișier
                 FileHandler.AppendToFile(person);
                 ultimaPersoanaAdaugata = person;
-                lblError.Text = "Persoană adăuga    tă cu succes!";
+                lblError.Text = "Persoană adăugată cu succes!";
                 lblError.ForeColor = Color.Green;
 
                 // Șterge conținutul TextBox-urilor

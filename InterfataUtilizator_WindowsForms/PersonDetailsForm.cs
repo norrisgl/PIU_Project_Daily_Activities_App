@@ -104,12 +104,14 @@ namespace InterfataUtilizator_WindowsForms.Forms
                 RowHeadersVisible = false
             };
 
+            /*
             _dgvActivitati.Columns.AddRange(
                 new DataGridViewTextBoxColumn { HeaderText = "Nume", FillWeight = 30 },
                 new DataGridViewTextBoxColumn { HeaderText = "Data", FillWeight = 20 },
                 new DataGridViewTextBoxColumn { HeaderText = "Tip", FillWeight = 30 },
                 new DataGridViewTextBoxColumn { HeaderText = "Descriere", FillWeight = 20 }
             );
+            */
 
             panelActivitati.Controls.Add(_dgvActivitati);
 
@@ -142,7 +144,7 @@ namespace InterfataUtilizator_WindowsForms.Forms
 
         private void BtnAdaugaActivitate_Click(object sender, EventArgs e)
         {
-            using (var addForm = new AddActivityForm())
+            using (var addForm = new AddActivityForm(_persoana))
             {
                 if (addForm.ShowDialog() == DialogResult.OK && addForm.NewActivity != null)
                 {
@@ -177,6 +179,7 @@ namespace InterfataUtilizator_WindowsForms.Forms
                     {
                         sb.AppendLine($"  Descriere: {activitate.Description}");
                     }
+                    sb.AppendLine($"  Prioritate: {activitate.Priority}");
                     sb.AppendLine();
                 }
             }
@@ -203,6 +206,11 @@ namespace InterfataUtilizator_WindowsForms.Forms
             }
 
             return selectedTypes.Any() ? string.Join(", ", selectedTypes) : "Niciun tip specificat";
+        }
+
+        private void PersonDetailsForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace InterfataUtilizator_WindowsForms
 {
-    partial class ActivityTracker
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.

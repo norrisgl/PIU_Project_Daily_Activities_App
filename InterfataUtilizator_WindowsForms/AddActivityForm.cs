@@ -4,17 +4,20 @@ using System.Linq;
 using System.Collections.Generic;
 using LibrarieModele;
 using System.Drawing;
+using NivelStocareDate;
+
 
 namespace InterfataUtilizator_WindowsForms
 {
     public partial class AddActivityForm : Form
     {
         public Activity NewActivity { get; private set; }
-
-        public AddActivityForm()
+        private readonly Person _persoanaAsociata;
+        public AddActivityForm(Person persoana)
         {
             InitializeComponent();
             InitializeForm();
+            _persoanaAsociata = persoana;
         }
 
         private void InitializeForm()
@@ -53,7 +56,14 @@ namespace InterfataUtilizator_WindowsForms
             var txtDescriere = new TextBox { Dock = DockStyle.Fill, Multiline = true, Height = 80, Margin = new Padding(0, 5, 0, 5) };
 
             var lblData = new Label { Text = "Data:", AutoSize = true, Anchor = AnchorStyles.Left };
-            var dtpData = new DateTimePicker { Dock = DockStyle.Fill, Margin = new Padding(0, 5, 0, 5) };
+            var dtpData = new DateTimePicker
+            {
+                Dock = DockStyle.Fill,
+                Margin = new Padding(0, 5, 0, 5),
+                Format = DateTimePickerFormat.Custom,
+                CustomFormat = "dd.MM.yyyy HH:mm", 
+                ShowUpDown = true 
+            };
 
             var lblTip = new Label { Text = "Tip activitate:", AutoSize = true, Anchor = AnchorStyles.Left };
             var flpTipuri = new FlowLayoutPanel
@@ -80,6 +90,37 @@ namespace InterfataUtilizator_WindowsForms
                 }
             }
 
+            var lblPrioritate = new Label { Text = "Prioritate:", AutoSize = true, Anchor = AnchorStyles.Left };
+
+            // Crează un FlowLayoutPanel sau alt container pentru RadioButton-uri
+            var flpPrioritati = new FlowLayoutPanel
+            {
+                FlowDirection = FlowDirection.LeftToRight,
+                AutoSize = true,
+                Padding = new Padding(0, 2, 5, 2)
+            };
+
+            // Adaugă un RadioButton pentru fiecare nivel de prioritate
+            foreach (PriorityLevel priority in Enum.GetValues(typeof(PriorityLevel)))
+            {
+                var rb = new RadioButton
+                {
+                    Text = priority.ToString(),
+                    Tag = priority,
+                    Margin = new Padding(0, 2, 5, 2),
+                    AutoSize = true
+                };
+
+                // Setează RadioButton "Medium" ca selectat implicit
+                if (priority == PriorityLevel.Medium) 
+                {
+                    rb.Checked = true;
+                }
+
+                flpPrioritati.Controls.Add(rb);
+            }
+
+
             // Butoane
             var btnAdauga = new Button { Text = "Adaugă", DialogResult = DialogResult.OK };
             var btnAnuleaza = new Button { Text = "Anulează", DialogResult = DialogResult.Cancel };
@@ -93,6 +134,8 @@ namespace InterfataUtilizator_WindowsForms
             mainTable.Controls.Add(dtpData, 1, 2);
             mainTable.Controls.Add(lblTip, 0, 3);
             mainTable.Controls.Add(flpTipuri, 1, 3);
+            mainTable.Controls.Add(lblPrioritate, 2, 3);
+            mainTable.Controls.Add(flpPrioritati, 3, 3);
 
             // Panel pentru butoane
             var pnlButoane = new Panel { Dock = DockStyle.Bottom, Height = 50, Padding = new Padding(0, 10, 0, 0) };
@@ -123,13 +166,44 @@ namespace InterfataUtilizator_WindowsForms
                     }
                 }
 
-                NewActivity = new Activity
+                // Creează noua activitate
+                var newActivity = new Activity
                 {
                     ActivityName = txtNume.Text,
                     Description = txtDescriere.Text,
                     DateAndTime = dtpData.Value,
                     ActType = selectedTypes
                 };
+
+                // 1. Obține persoana curentă (presupunând că o ai disponibilă)
+                Person persoanaCurenta = _persoanaAsociata;
+
+                // 2. Adaugă activitatea la persoană
+                persoanaCurenta.ActivityHandler?.Activities?.Add(newActivity);
+
+                // 3. Actualizează fișierul
+                try
+                {
+                    // Presupunând că ai o clasă FileHandler cu metode pentru gestionarea fișierului
+                    List<Person> persoane = FileHandler.ReadFromFile();
+
+                    // Găsește și actualizează persoana în listă
+                    var index = persoane.FindIndex(p => p.PersonID == persoanaCurenta.PersonID);
+                    if (index != -1)
+                    {
+                        persoane[index] = persoanaCurenta;
+                    }
+
+                    // Salvează lista actualizată în fișier
+                    FileHandler.WriteToFile("C:/Users/Noris/source/repos/ProiectPIU/DailyActivities_PIU/DailyActivities_PIU/bin/Debug/Persoane.txt", persoane);
+
+                    MessageBox.Show("Activitate adăugată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Eroare la salvarea activității: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();

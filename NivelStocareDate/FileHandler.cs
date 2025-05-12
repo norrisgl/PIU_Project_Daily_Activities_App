@@ -11,27 +11,36 @@ namespace NivelStocareDate
         private const char SEPARATOR_PRINCIPAL_FISIER = ';';
 
         // Scrie o lista de persoane si activitatile lor in fisier
-        public static void WriteInFile(string filePath, Person persoana)
+        public static void WriteToFile(string filePath, List<Person> persoane)
+{
+    try
+    {
+        using (StreamWriter writer = new StreamWriter(filePath, false)) // false pentru suprascriere
         {
-            using (StreamWriter writer = new StreamWriter(filePath, true))
+            foreach (Person persoana in persoane)
             {
-                // Scrie informatiile despre persoana
+                // Scrie informațiile de bază despre persoană
                 writer.WriteLine(persoana.FileConverter());
-
-                // Scrie fiecare activitate a persoanei
-                if (persoana.ActivityHandler != null && persoana.ActivityHandler.Activities != null)
+                
+                // Scrie activitățile persoanei
+                if (persoana.ActivityHandler?.Activities != null)
                 {
-                    // Scrie fiecare activitate a persoanei
                     foreach (Activity activitate in persoana.ActivityHandler.Activities)
                     {
                         writer.WriteLine(activitate.FileConverter());
                     }
                 }
-
-                // Adauga un separator pentru a indica sfarsitul datelor persoanei
+                
+                // Separator între persoane
                 writer.WriteLine("---");
             }
         }
+    }
+    catch (Exception ex)
+    {
+        throw new Exception($"Eroare la scrierea în fișier: {ex.Message}");
+    }
+}
 
         public static List<Person> ReadFromFile()
         {

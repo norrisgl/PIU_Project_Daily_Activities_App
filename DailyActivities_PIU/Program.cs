@@ -89,7 +89,7 @@ namespace DailyActivities_PIU
                         int idPersoana = ++PersonsNr;
                         persoanaNoua.PersonID = idPersoana;
 
-                        FileHandler.WriteInFile("Persoane.txt", persoanaNoua); 
+                        //FileHandler.WriteToFile("Persoane.txt", persoanaNoua); 
                         break;
 
                     case "6":

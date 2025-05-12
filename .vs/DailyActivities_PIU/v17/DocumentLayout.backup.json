@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\activitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A98751B-86A5-4972-9C5F-51D7FD895D3F}|NivelStocareDate\\NivelStocareDate.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\nivelstocaredate\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A98751B-86A5-4972-9C5F-51D7FD895D3F}|NivelStocareDate\\NivelStocareDate.csproj|solutionrelative:nivelstocaredate\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\persondetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\persondetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\activityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|c:\\users\\noris\\source\\repos\\proiectpiu\\dailyactivities_piu\\interfatautilizator_windowsforms\\addactivityform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\addactivityform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\librariemodele\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F3152B-537E-4A8C-88B7-8D782D0A3DDB}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D48AB2C-ED89-409F-9CDC-2599158D049F}|InterfataUtilizator_WindowsForms\\InterfataUtilizator_WindowsForms.csproj|solutionrelative:interfatautilizator_windowsforms\\persondetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +34,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T07:59:26.568Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivityHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\ActivityHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\ActivityHandler.cs",
+              "RelativeToolTip": "LibrarieModele\\ActivityHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:04:46.918Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -42,64 +73,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonDetailsForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.Designer.cs",
-              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.Designer.cs",
-              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.Designer.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIAwwCcAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FileHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\NivelStocareDate\\FileHandler.cs",
+              "RelativeDocumentMoniker": "NivelStocareDate\\FileHandler.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\NivelStocareDate\\FileHandler.cs",
+              "RelativeToolTip": "NivelStocareDate\\FileHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:18:13.959Z",
+              "WhenOpened": "2025-05-05T08:34:42.442Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonDetailsForm.cs",
-              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:17:02.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonDetailsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs",
-              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs [Design]",
-              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\PersonDetailsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:16:58.571Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Person.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\Person.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\LibrarieModele\\Person.cs",
+              "RelativeToolTip": "LibrarieModele\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:24:33.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AddActivityForm.cs",
               "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\AddActivityForm.cs",
               "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\AddActivityForm.cs",
               "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\AddActivityForm.cs",
               "RelativeToolTip": "InterfataUtilizator_WindowsForms\\AddActivityForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAANEAAAAAAAAAAAAAAHIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T06:22:06.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ActivityTracker.cs",
-              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
-              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs",
-              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\ActivityTracker.cs*",
-              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\ActivityTracker.cs*",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAwG4AAAAOAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\MainForm.cs",
+              "RelativeDocumentMoniker": "InterfataUtilizator_WindowsForms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Noris\\source\\repos\\ProiectPIU\\DailyActivities_PIU\\InterfataUtilizator_WindowsForms\\MainForm.cs",
+              "RelativeToolTip": "InterfataUtilizator_WindowsForms\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T11:42:45.19Z",
               "EditorCaption": ""
